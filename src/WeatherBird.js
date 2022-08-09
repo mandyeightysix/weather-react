@@ -1,6 +1,6 @@
 import React from "react";
 import axios from "axios";
-import { Audio } from "react-loader-spinner";
+import { Puff } from "react-loader-spinner";
 
 export default function WeatherBird(props) {
   function handleResponse(response) {
@@ -14,11 +14,11 @@ export default function WeatherBird(props) {
 
   axios.get(apiUrl).then(handleResponse);
   return (
-    <Audio
+    <Puff
       height="80"
       width="80"
       radius="9"
-      color="green"
+      color="lightblue"
       ariaLabel="three-dots-loading"
       wrapperStyle
       wrapperClass
