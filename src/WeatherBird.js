@@ -1,6 +1,6 @@
 import React from "react";
 import axios from "axios";
-import { Puff } from "react-loader-spinner";
+import { TailSpin } from "react-loader-spinner";
 
 export default function WeatherBird(props) {
   function handleResponse(response) {
@@ -14,7 +14,7 @@ export default function WeatherBird(props) {
 
   axios.get(apiUrl).then(handleResponse);
   return (
-    <Puff
+    <TailSpin
       height="80"
       width="80"
       radius="9"
