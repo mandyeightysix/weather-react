@@ -1,15 +1,25 @@
 import React from "react";
-import WeatherBird from "./WeatherBird";
+import Navigation from "./Navigation.js";
+import CurrentData from "./CurrentData";
+import CurrentOverview from "./CurrentOverview";
 
-import "./App.css";
+import "./App";
+import WeatherForecast from "./WeatherForecast.js";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Hello World!!</h1>
-        <WeatherBird city="Hamilton" />
-      </header>
+    <div className="container">
+      <div className="weatherAppWrapper">
+        <div className="weatherApp">
+          <Navigation />
+          <br />
+          <CurrentData />
+          <br />
+          <CurrentOverview />
+          <br />
+          <WeatherForecast />
+        </div>
+      </div>
     </div>
   );
 }

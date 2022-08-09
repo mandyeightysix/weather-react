@@ -1,27 +1,58 @@
-import React from "react";
-import axios from "axios";
-import { TailSpin } from "react-loader-spinner";
+import "./App.js";
 
-export default function WeatherBird(props) {
-  function handleResponse(response) {
-    alert(
-      `The weather in ${response.data.name} is ${response.data.main.temp}°C`
-    );
-  }
-
-  const apiKey = `21d20dbb06095f793410f891f00e7748`;
-  const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.city}&appid=${apiKey}&units=metric`;
-
-  axios.get(apiUrl).then(handleResponse);
+export default function WeatherForecast() {
   return (
-    <TailSpin
-      height="80"
-      width="80"
-      radius="9"
-      color="lightblue"
-      ariaLabel="three-dots-loading"
-      wrapperStyle
-      wrapperClass
-    />
+    <div className="WeatherForecast">
+      <div class="row">
+        <div class="col-2">
+          <div class="weather-forecast-date">Fri</div>
+          <span>🌦️</span>
+          <div class="weather-forecast-temperatures">
+            <span class="weather-forecast-temperature-max">31°</span>
+            <span class="weather-forecast-temperature-min">18°</span>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="weather-forecast-date">Sat</div>
+          <span>🌦️</span>
+          <div class="weather-forecast-temperatures">
+            <span class="weather-forecast-temperature-max">32°</span>
+            <span class="weather-forecast-temperature-min">18°</span>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="weather-forecast-date">Sun</div>
+          <span>☀️</span>
+          <div class="weather-forecast-temperatures">
+            <span class="weather-forecast-temperature-max">28°</span>
+            <span class="weather-forecast-temperature-min">16°</span>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="weather-forecast-date">Mon</div>
+          <span>☁️</span>
+          <div class="weather-forecast-temperatures">
+            <span class="weather-forecast-temperature-max">33°</span>
+            <span class="weather-forecast-temperature-min">15°</span>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="weather-forecast-date">Tue</div>
+          <span>🌧️</span>
+          <div class="weather-forecast-temperatures">
+            <span class="weather-forecast-temperature-max">27°</span>
+            <span class="weather-forecast-temperature-min">19°</span>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="weather-forecast-date">Wed</div>
+          <span>☁️</span>
+          <div class="weather-forecast-temperatures">
+            <span class="weather-forecast-temperature-max">27°</span>
+            <span class="weather-forecast-temperature-min">16°</span>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
