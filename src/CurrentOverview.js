@@ -1,5 +1,3 @@
-import "./App.css";
-
 export default function CurrentOverview() {
   return (
     <div className="CurrentOverview">

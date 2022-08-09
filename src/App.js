@@ -2,7 +2,7 @@ import React from "react";
 import Navigation from "./Navigation.js";
 import CurrentData from "./CurrentData";
 import CurrentOverview from "./CurrentOverview";
-import WeatherForecast from "./WeatherForecast.js";
+import WeatherForecast from "./WeatherForecast";
 
 import "./App";
 
