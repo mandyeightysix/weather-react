@@ -23,21 +23,13 @@ function App() {
           {" "}
           <a
             class="source-link"
-            href="https://github.com/mandyeightysix/weather-react"
+            href="https://github.com/mandyeightysix/weather-react.git"
             target="_blank"
             rel="noreferrer"
           >
             Open-source code
           </a>{" "}
-          by Amanda Pepin - hosted on{" "}
-          <a
-            class="host-link"
-            href="https://jade-frangollo-c19f1f.netlify.app/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Netlify
-          </a>
+          by Amanda Pepin
         </small>
       </div>
     </div>
