@@ -1,0 +1,10 @@
+.CurrentData h1 {
+  color: rgb(89, 86, 86);
+  font-size: 38px;
+  font-weight: 900;
+  line-height: 48px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0);
+  opacity: 2;
+}

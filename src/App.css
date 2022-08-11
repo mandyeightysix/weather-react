@@ -18,6 +18,11 @@ ul {
   padding: 0;
 }
 
+small {
+  font-size: 10px;
+  font-family: "Radio Canada", sans-serif;
+}
+
 li {
   list-style: none;
   margin: 0;
@@ -62,9 +67,9 @@ a:active {
   border: 1px solid #dadde1;
   border-radius: 4px;
   background: radial-gradient(
-    circle at 10% 20%,
-    rgb(253, 193, 104) 0%,
-    rgb(251, 128, 128) 90%
+    circle at 0.7% 1%,
+    rgb(215, 248, 247) 0%,
+    rgb(102, 188, 239) 100.2%
   );
 }
 
@@ -92,7 +97,7 @@ a:active {
 
 .units {
   box-sizing: border-box;
-  color: rgb(89, 86, 86);
+  color: rgba(35, 24, 10, 0.808);
   display: inline;
   font-size: 13px;
   font-weight: 400;
@@ -128,8 +133,9 @@ a:active {
 }
 
 .source-link {
-  color: #fd8852;
+  color: #a66749;
   text-decoration: none;
+  font-family: "Radio Canada", sans-serif;
 }
 
 .source-link :hover {
