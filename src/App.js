@@ -1,7 +1,7 @@
 import React from "react";
-import Navigation from "./Navigation.js";
-import CurrentData from "./CurrentData";
-import CurrentOverview from "./CurrentOverview";
+import Navigation from "./Navigation";
+import Weather from "./Weather.js";
+import CurrentOverview from "./CurrentOverview.js";
 import WeatherForecast from "./WeatherForecast";
 
 import "./App";
@@ -13,7 +13,7 @@ function App() {
         <div className="weatherApp">
           <Navigation />
           <br />
-          <CurrentData />
+          <Weather />
           <br />
           <CurrentOverview />
           <br />

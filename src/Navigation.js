@@ -3,8 +3,8 @@ import "./App.js";
 export default function Navigation() {
   return (
     <div className="Navigation">
-      <div class="row opacity-50 mb-2 cities">
-        <div class="col-3">
+      <div className="row opacity-50 mb-2 cities">
+        <div className="col-3">
           <input
             class="btn btn-outline-dark mb-3"
             type="submit"
@@ -12,7 +12,7 @@ export default function Navigation() {
             id="vancouver"
           />
         </div>
-        <div class="col-3">
+        <div className="col-3">
           <input
             class="btn btn-outline-dark mb-3"
             type="submit"
@@ -20,7 +20,7 @@ export default function Navigation() {
             id="saskatoon"
           />
         </div>
-        <div class="col-3">
+        <div className="col-3">
           <input
             class="btn btn-outline-dark mb-3"
             type="submit"
@@ -28,7 +28,7 @@ export default function Navigation() {
             id="montreal"
           />
         </div>
-        <div class="col-3">
+        <div className="col-3">
           <input
             class="btn btn-outline-dark mb-3"
             type="submit"
@@ -37,9 +37,9 @@ export default function Navigation() {
           />
         </div>
       </div>
-      <form id="search-form" class="mb-3">
-        <div class="row sm-12">
-          <div class="col-8">
+      <form id="search-form" className="mb-3">
+        <div className="row sm-12">
+          <div className="col-8">
             <input
               type="search"
               placeholder="Type in location..."
@@ -48,13 +48,13 @@ export default function Navigation() {
               autocomplete="off"
             />
           </div>
-          <div class="col-2">
-            <div class="opacity-50">
+          <div className="col-2">
+            <div className="opacity-50">
               <input class="btn btn-outline-dark" type="submit" />
             </div>
           </div>
-          <div class="col-2">
-            <div class="opacity-50">
+          <div className="col-2">
+            <div className="opacity-50">
               <button id="geo-location" class="btn btn-outline-dark">
                 <i class="fa-solid fa-location-arrow"></i>
               </button>
