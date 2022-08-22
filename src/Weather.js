@@ -1,6 +1,7 @@
 import React from "react";
 import Time from "./Time";
 import WeatherIcon from ".WeatherIcon";
+import WeatherTemperature from "./WeatherTemperature";
 import "./App.css";
 
 export default function Weather(props) {
@@ -18,7 +19,9 @@ export default function Weather(props) {
               <div className="temperature-container d-flex justify-content-end">
                 <canvas width="52" height="52"></canvas>
                 <span className="temp" id="temperature">
-                  <WeatherIcon code={props.data.icon} />{" "}
+                  <span>
+                    <WeatherIcon code={props.data.icon} />{" "}
+                  </span>
                   <WeatherTemperature celsius={props.data.temperature} />
                 </span>
                 <span className="units">°C|°F</span>
@@ -32,8 +35,10 @@ export default function Weather(props) {
           <div className="description-date">
             <ul>
               <li>
-                <span id="date">Saturday 14:47</span>,
-                <span id="description"> sunny</span>
+                <span id="date">
+                  <Time date={props.data.date} />{" "}
+                </span>
+                ,<span id="description">{props.data.description}</span>
               </li>
               <li>
                 Humidity: <span id="humidity">{props.data.humidity}</span>%,
